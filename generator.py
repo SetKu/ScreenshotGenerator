@@ -110,12 +110,12 @@ screenshots = { }
 ## Args: START
 
 if sys.argv.__contains__("--background-color"):
-  index = sys.argv.index("--background-color") - 1
+  index = sys.argv.index("--background-color") + 1
   colors = sys.argv[index].split(":")
   backgroundColor = (int(colors[0]), int(colors[1]), int(colors[2]))
 
 if sys.argv.__contains__("--text-color"):
-  index = sys.argv.index("--background-color") - 1
+  index = sys.argv.index("--background-color") + 1
   colors = sys.argv[index].split(":")
   textColor = (int(colors[0]), int(colors[1]), int(colors[2]))
 
